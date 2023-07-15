@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------------------------------CSS Links---------------------------------- -->
+    <link rel="stylesheet" href="movieproject.css">
+    <link rel="stylesheet" href="responsiveness.css">
+
+    <!-- -----------------------------Font Awesome Link ------------------------------------->
+    <script src="https://kit.fontawesome.com/0672f881c3.js" crossorigin="anonymous"></script>
+
+    <title>Music Player</title>
+</head>
+<body>
+
+    <!------------------ ------------------header Section------------------------------------->
+    <header class="nav-bar">
+        <div class="title-combo">
+            <div class="logo">
+                <img src="images/main-images/logo.png" alt="logo">
+            </div>
+
+            <div class="logo-name">
+                <h2 class="text-hover">Music</h2>
+                <h5>Player</h5>
+            </div>
+        </div>
+
+        <div class="fav">
+            <a href="#">
+                <h3 class="text-hover">Favourites</h3>
+            </a>
+        </div>
+
+        <div class="search-box">
+            <form action="">
+                <button id="search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Search.." name="search" id="search">
+                <button id="mic" type="submit"><i class="fas fa-microphone"></i></button>
+            </form>
+        </div>
+
+        <div class="bell-icon">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+
+        <div class="profile-image">
+            <img src="images/main-images/profileimage.jpg">
+        </div>  
+</header>
+    <!--------------------------------------Main Section-------------------------------------->
+    <main>
+        <aside class="aside section-1">
+            <!--------------Banner Section------------------>
+            <section class="container">
+                <div class="box">
+                    <img src="images/banners/banner1.jpg" alt="banner-1">
+                </div>
+                <div class="box">
+                    <img src="images/banners/banner2.jpg" alt="banner-2">
+                </div> 
+                <div class="box">
+                    <img src="images/banners/banner3.jpg" alt="banner-2">
+                </div>
+            </section>
+            <!-------------- ---Latest Release Section------------ -->
+          
+            <section class="latest-release">
+            <h2 class="h2-headings">Latest Release</h2>
+				<div class="latest">
+					<div class="album">
+						<img src="images/latest-release/Heat-Waves.jpg">
+						<div class="album-details">
+							<p class="album-name">Heat-waves</p>
+							<p class="album-status">aug 2 2021</p>
+						</div>
+						<i class="fa-solid fa-ellipsis">
+							<div class="dropdown">
+								<p>play now</p>
+								<p>add to queue</p>
+								<p>add to favourite</p>
+								<p>get info</p>
+							</div>
+						</i>
+					</div>
+					<div class="album">
+						<img src="images/latest-release/mitraz.jpg">
+						<div class="album-details">
+							<p class="album-name">Aakhiya</p>
+							<p class="album-status">feb 2022</p>
+						</div>
+						<i class="fa-solid fa-ellipsis">
+							<div class="dropdown">
+								<p>play now</p>
+								<p>add to queue</p>
+								<p>add to favourite</p>
+								<p>get info</p>
+							</div>
+						</i>
+					</div>
+					<div class="album">
+						<img src="images/latest-release/Moonrise-Atif-Aslam.jpg">
+						<div class="album-details">
+							<p class="album-name">Moonrise</p>
+							<p class="album-status">Dec 2022</p>
+						</div>
+						<i class="fa-solid fa-ellipsis">
+							<div class="dropdown">
+								<p>play now</p>
+								<p>add to queue</p>
+								<p>add to favourite</p>
+								<p>get info</p>
+							</div>
+						</i>
+					</div>
+					<div class="album">
+						<img src="images/latest-release/unstopabble.jpg">
+						<div class="album-details">
+							<p class="album-name">unstopabble</p>
+							<p class="album-status">jan 2021
+							</p>
+						</div>
+						<i class="fa-solid fa-ellipsis">
+							<div class="dropdown">
+								<p>play now</p>
+								<p>add to queue</p>
+								<p>add to favourite</p>
+								<p>get info</p>
+							</div>
+						</i>
+					</div>
+				</div>
+            </section>
+
+             <!------------------ Popular Artists ------------------->
+
+             <section class="popular-artists">
+                <h1 class="heading-text">Popular Artists</h1>
+                <div class="popular-artist-content">
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/alanwalker.jpg" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>alan walker</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/arijitsingh.jpg" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>Arijit Singh</figcaption>
+                        </a>
+                    </figure>
+                   
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/atif aslam.png" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>Atif Aslam</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/chainsmokers.jpg" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>Chainsmokers</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/Yo-Yo-Honey-Singh-.jpg" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>Honey Singh</figcaption>
+                        </a>
+                    </figure>     
+                    <figure>
+                        <a href="playlist.html">
+                            <img src="images/popular-artist/Shakira.jpg" alt="">
+                            <!-- <i class="fa-solid fa-play icon"></i> -->
+                            <figcaption>Shakira</figcaption>
+                        </a>
+                    </figure>                
+                </div>
+            </section>
+             <!---------------------- Music Station ------------------------->
+
+             <section class="music-station">
+                <figure id="mus-sta-fig">
+                    <img src="images/music-station/music-station2.jpg">
+                </figure>
+                <div class="music-mood">
+                   <figure><a href=""><img src="images/music-station/love-station.jpg" alt=""><p>Love</p></a></figure>
+                   <figure><a href=""><img src="images/music-station/retro.jpg" alt=""><p>Retro</p></a></figure>
+                   <figure><a href=""><img src="images/music-station/chill-music.jpg" alt=""><p>Chill</p></a></figure>
+                   <figure><a href=""><img src="images/music-station/sad.jpg" alt=""><p>sad</p></a></figure>
+                   <figure><a href=""><img src="images/music-station/rock-music.jpg" alt=""><p>Rock</p></a></figure>
+                   <figure><a href=""><img src="images/music-station/pop-music.jpg" alt=""><p>Pop</p></a></figure>
+                  
+                </div>
+            </section>
+             <!--------------------- Big Music Station ----------------------------->
+
+             <section class="big-music-station">
+                <figure>
+                    <a href="#">
+                       <img src="images/big-music-station/party1.jpg">
+                       <p>Party</p> 
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                        <img src="images/big-music-station/love.jpg">
+                        <p>Love</p>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#">
+                       <img src="images/big-music-station/roadtrip.jpg">
+                       <p>Road Trip</p> 
+                    </a>
+                    
+                </figure>
+            </section>
+             <!------------------------------ Latest English ------------------------->
+
+             <section class="latest-songs" id="latest-english">
+                <h1 class="heading-text">Latest English</h1>
+                <div class="latest-song-div">
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/alan-walker.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Alan Walker-Mix</h5>
+                                <h6>Dec 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/ckay-lovenwantiti.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Ckay Love Nwantiti</h5>
+                                <h6>AUG 2, 2021</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/heatwaves.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Heat Waves</h5>
+                                <h6>feb 2, 2020</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/iamsorrywelied.jpg" alt="">
+                            <figcaption class="">
+                                <h5>I am sorry we Lied</h5>
+                                <h6>apr 2, 2023</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/rema-calmdown.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Calm Down</h5>
+                                <h6>oct 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>       
+                </div>
+            </section>
+            <section class="latest-songs" id="latest-hindi">
+                <h1 class="heading-text">Latest Hindi</h1>
+                <div class="latest-song-div">
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/beshramrang.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Beshram Rang</h5>
+                                <h6>Dec 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/malangsajna.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Malang Sajna</h5>
+                                <h6>Dec 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/mitrazzehan.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Mitraz Zehan</h5>
+                                <h6>feb 2, 2023</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/rangisaari.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Rangi Sari</h5>
+                                <h6>Sep 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="">
+                            <img src="images/latest-songs/voddo-badsahah.jpg" alt="">
+                            <figcaption class="">
+                                <h5>Voddo Badshah</h5>
+                                <h6>Sep 2, 2022</h6>
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+            </section>
+        </aside>
+    
+         <!-------------------- Playlist section - Aside --------------->
+		<aside class="playlist">
+			<h1>Playlist</h1>
+			<h4>
+				<select>
+					<option value="">Queue</option>
+					<option value="">Playlist</option>
+				</select>
+			</h4>
+			<!--------- playlist songs --------->
+			<div class="song-container">
+				<p class="index">01</p>
+				<img src="images/latest-songs/alan-walker.jpg" alt="">
+				<div class="song-info">
+					<p>Alan Walker-mix</p>
+					<p>Alan Walker</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">02</p>
+				<img src="images/latest-songs/beshramrang.jpg" alt="">
+				<div class="song-info">
+					<p>besharam Rang</p>
+					<p>Shilpa & Kumaar</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">03</p>
+				<img src="images/latest-songs/ckay-lovenwantiti.jpg" alt="">
+				<div class="song-info">
+					<p>Love Nwantiti</p>
+					<p>Ckay</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">04</p>
+				<img src="images/latest-songs/heatwaves.jpg" alt="">
+				<div class="song-info">
+					<p>Heat Wave</p>
+					<p>Glass Animal</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">05</p>
+				<img src="images/latest-songs/iamsorrywelied.jpg" alt="">
+				<div class="song-info">
+					<p>I am sorry<br>we Lied</p>
+					<p>Salena Gomez</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">06</p>
+				<img src="images/latest-songs/malangsajna.jpg" alt="">
+				<div class="song-info">
+					<p>Malang Sajna</p>
+					<p>Sachet and Parampara</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">07</p>
+				<img src="images/latest-songs/mitrazzehan.jpg" alt="">
+				<div class="song-info">
+					<p>Zehan</p>
+					<p>Mitraz</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">08</p>
+				<img src="images/latest-songs/rangisaari.jpg" alt="">
+				<div class="song-info">
+					<p>rangi Saari
+                    </p>
+					<p>Kanishak & kavita</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">09</p>
+				<img src="images/latest-songs/rema-calmdown.jpg" alt="">
+				<div class="song-info">
+					<p>Calm Down</p>
+					<p>rema</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">10</p>
+				<img src="images/latest-songs/voddo-badsahah.jpg" alt="">
+				<div class="song-info">
+					<p>Voddo</p>
+					<p>Badshah</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">11</p>
+				<img src="images/latest-songs/jarico.jpg" alt="">
+				<div class="song-info">
+					<p>Island</p>
+					<p>Best of NCS</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">12</p>
+				<img src="images/latest-songs/vaishnav.jpg" alt="">
+				<div class="song-info">
+					<p>Vaishnav jan to</p>
+					<p>Vandi guru paramparam</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">13</p>
+				<img src="images/latest-songs/warriyo-mortals.jpg" alt="">
+				<div class="song-info">
+					<p>Warriyo-mortals</p>
+					<p>Laura Brehm</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">14</p>
+				<img src="images/latest-songs/linkin-park.jpg" alt="">
+				<div class="song-info">
+					<p>In the end</p>
+					<p>Linkin Park</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">15</p>
+				<img src="images/latest-songs/landscape.jpg" alt="">
+				<div class="song-info">
+					<p>Landscape</p>
+					<p>Best of NCS</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">16</p>
+				<img src="images/latest-songs/raazi.jpg" alt="">
+				<div class="song-info">
+					<p>Raazi</p>
+					<p>Arijit Singh</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">17</p>
+				<img src="images/latest-songs/jarico.jpg" alt="">
+				<div class="song-info">
+					<p>Island</p>
+					<p>Best of NCS</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+			<div class="song-container">
+				<p class="index">18</p>
+				<img src="images/latest-songs/vaishnav.jpg" alt="">
+				<div class="song-info">
+					<p>Vaishnav jan to</p>
+					<p>Vande guru paramparam</p>
+				</div>
+				<i class="fa-regular fa-heart"></i>
+			</div>
+		</aside>
+     </main>
+      <!-- ------------------Footer Music Palyer ---------------------- -->
+
+      <footer>
+        <div class="play-song-info trans-bg">
+            <div class="con-left trans-bg">
+                <div class="footer-img">
+                    <img class="small-img inline-block" src="images/latest-release/Heat-Waves.jpg" alt=""> 
+                </div>
+                <div class="trans-bg">
+                    <div class="font-mid trans-bg">Heat Waves</div>
+                    
+                </div> 
+            </div>    
+            <div class="con-right trans-bg side-margin-4px">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="player trans-bg">
+            <div class="player-contorls trans-bg">
+                <div><i class="fa-solid fa-shuffle"></i></div>
+                <div><i class="fa-solid fa-backward-step"></i></div>
+                <div><i class="fa-solid fa-play"></i></div>
+                <div><i class="fa-solid fa-forward-step"></i></div>
+                <div><i class="fa-solid fa-arrow-rotate-left"></i></div>
+            </div>
+            <div class="slider">
+                <div class="time">0:00</div>
+                <div class="slide-ctr">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myrange">
+                </div>
+                <div class="time">5:00</div>
+            </div>
+        </div>
+        <div class="extras trans-bg">
+            <div><i class="fa-solid fa-list"></i></div>
+            <div><i class="fa-solid fa-laptop"></i></div>
+            <div><i class="fa-solid fa-volume-high"></i></div>
+            <div></div>
+            <div><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+        </div>
+    </footer>
+    
+</body>
+</html>

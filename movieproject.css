@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+}
+:root
+{
+    --text-color: white;
+}
+a
+{
+    text-decoration: none;
+}
+::-webkit-scrollbar
+{
+    display: none;
+}
+.playlist::-webkit-scrollbar 
+{
+    width: 0px;
+}
+  
+.playlist::-webkit-scrollbar-track 
+{
+    background: black;
+}
+  
+.playlist::-webkit-scrollbar-thumb 
+{
+    background-color:white;
+    border-radius: 20px;
+    border: 3px solid black;
+  
+}
+.trans-bg{
+    background: transparent !important;
+}
+.side-margin-4px i{
+    margin: 0 4px;
+}
+
+/********************************************** header-section *******************************************/
+.nav-bar
+{
+    
+    height: auto;
+    width: auto;
+    background-image:url(images/main-images/universe.jpg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all ease-in-out 1s;
+   
+}
+
+header>div
+{
+    color: var(--text-color);
+    flex: 1;
+    text-align: center;
+}
+
+.title-combo>div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    animation-name: rotating;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotating 
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.search-box
+{
+    position: relative;
+    flex: 2 !important;
+}
+
+.search-box input
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+    border-radius: 20px;
+    background: white;
+    outline: none;
+    border: none;
+}
+
+.search-box button
+{
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 40px;
+    position: absolute;
+    transform: scale(0.9);  
+    background: white;
+}
+
+.search-box i
+{
+    background: white;
+    color:grey;
+}
+#search
+{
+    left: 0;
+}
+
+#mic
+{
+    right: 0;
+}
+.profile-image img
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.text-hover:hover
+{
+    color: yellow;
+}
+
+/*********************main-section ****************************/
+main
+{
+    width: 100%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    transition: all ease-in-out 1s;
+    background-image: linear-gradient(to bottom left,black,rgb(4, 4, 50));
+}
+
+/*********************Banner Section***************************/
+.aside {
+    display: inline-block;
+}
+.section-1 {
+    width: 70%;
+    height: 84vh;
+    padding-left: 12px;
+    padding-right: 12px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-block: 23px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: visible;
+    justify-content: center;
+}
+.box{
+    transition: all ease-in-out 0.3s;
+}
+
+.box img{
+
+    height: 14vw;
+    width: 20.299999999999997vw;
+    border-radius: 9px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0,0.1);
+    transition: 0.3s;
+    margin-left: 10px;
+    margin-right:10px;
+
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 2;
+    transition: all ease-in-out 0.3s;
+}
+
+/***************************** Latest Release Section***************************** */
+.latest-release h2{
+    margin-left:40px;
+    font-size:20px;
+}
+.latest {
+    color: white;
+    display: grid;
+    margin-left: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+  
+  
+.album {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    cursor: pointer;
+}
+  
+.album img {
+    width: 90px;
+    height: 80px
+}
+  
+.album img:hover {
+    box-shadow: 4px 4px 27px #242020;
+}
+  
+.album-details p {
+    width: 150px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+  
+  
+.album-status {
+    font-size: 12px;
+    color: #3f729b;
+}
+  
+.album i {
+    position: relative;
+    margin-left: auto;
+    margin-top: -60px;
+}
+  
+.album i:hover .dropdown {
+    display: inline-block;
+}
+  
+.dropdown {
+    width: 93px;
+    position: absolute;
+    left: -80px;
+    top: 10px;
+    background-color: rgb(167, 162, 162);
+    display: none;
+    transition: opacity 0.3s;
+    color: black;
+    border-radius: 2px;
+}
+  
+.dropdown p {
+    padding: 4px;
+    font-size: 10px;
+    font-weight: 400;
+    border:1px solid black;
+  
+}
+  
+.dropdown p:hover {
+    background-color: rgb(72, 80, 72);
+}
+
+/********************************** Popular Artists************************** */
+.popular-artists h1{
+    margin-left:20px;
+    font-size:20px;
+}
+.popular-artists {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 2vw;
+    box-sizing: border-box;
+    margin-left:18px;
+    
+}
+
+.popular-artist-content {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 7px;
+    position: relative;
+    justify-content: space-evenly;
+}
+
+.popular-artists figure{
+    margin: 0 15px;
+}
+
+.popular-artists img {
+    width: 8vw;
+    min-width: 40px;
+    min-height: 40px;
+    height: 8vw;
+    border-radius: 50%;
+
+} 
+.popular-artists img:hover{
+
+    box-shadow: 6px 8px 27px 5px #242020;
+
+}
+
+/*************************** Music Station ***************************/
+
+.music-station{
+    display: inline-flex;
+    position: relative;
+    margin-top: 70px;
+    padding-top: 20px;
+    margin-left: 30px;
+    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border: hidden;
+    background-color: #05052b;
+}
+
+#mus-sta-fig{
+    margin:0px 15px;
+}
+
+#mus-sta-fig img{
+    width: 120px;
+    height: 120px;
+}
+
+.music-mood{
+    width: 66%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music-mood figure{
+    margin: 10px 10px;
+}
+
+.music-mood img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.music-mood img:hover{
+    box-shadow: 0 0px 12px 0px white;
+    transition: all ease-in-out 0.2s;
+}
+
+.music-mood p{
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 66px;
+    font-size: 1.1rem;
+    opacity: 0.7;
+    font-weight: 800;
+    background:transparent;
+}
+
+/***************************** Big Music Station ********************************/
+
+.big-music-station{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    position: relative;
+    top: 5vw;
+    height: auto;
+    width: 94%;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+.big-music-station figure{
+    transition: all ease-in-out 0.5s;
+}
+
+.big-music-station figure:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.big-music-station img{
+    width: 290px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.big-music-station p{
+    color: grey;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 132px;
+    font-size: 2.2rem;
+    opacity: 0.9;
+    font-weight: 900;
+    background: transparent;
+    
+}
+
+
+/**************************** Latest hindi english Section**********************/
+#latest-english{
+    top: 5vw;
+}
+
+#latest-hindi{
+    top: 7vw;
+}
+.heading-text
+{
+    margin-left:50px;
+}
+
+.latest-songs {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.latest-song-div {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin-left:20px;
+    margin-top:8px;
+}
+
+.latest-song-div img:hover{
+    box-shadow: 0 0px 12px 0px white;
+    transition: all ease-in-out 0.3s;
+}
+
+
+.latest-song-div img {
+    width: 10vw;
+    min-width: 60px;
+    min-height: 60px;
+    height: 10vw;
+    margin-left:35px;
+}
+.latest-song-div figcaption {
+    text-align: center;
+    margin-left:35px;
+}
+/*********************************** Aside Section 2************************************ */
+.playlist {
+    color: white;
+    position: fixed;
+    right: 10px;
+    left: 1100px;
+    top: 55px;
+    padding-top: 30px;
+    overflow:auto;
+    height: 80.5%;
+}
+  
+.playlist h1 {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 500;
+}
+  
+.playlist h1, h4 {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+  
+.playlist h4 {
+    margin-left: 170px;
+    font-size: 14px;
+}
+  
+.playlist select {
+    color: white;
+    background-color: #010203;
+    border-style: none;
+}
+  
+.playlist select:hover {
+    cursor: pointer;
+}
+  
+.playlist i {
+    color: rgb(59, 53, 53);
+}
+  
+.playlist .song-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    transition: .2s;
+}
+  
+.song-container:hover {
+    background-color: #01070D;
+    cursor: pointer;
+    color: rgb(172, 32, 8);
+}
+  
+.song-container img {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 17px 2px#242020;
+}
+  
+.song-container .index {
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+}
+  
+.song-container i {
+    margin-right: 4%;
+}
+  
+.song-info {
+    margin-left: 10px;
+    width: 210px;
+}
+  
+.song-info p:nth-child(1) {
+    
+    font-size: 14px;
+}
+  
+.song-info p:nth-child(2) {
+    font-size: 13px;
+    padding-top: 5px;
+    color: white;
+}
+  
+/***********************************footerSection**************************** */
+
+footer{
+    background: hsl(0deg 0% 9%);
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-img img{
+    width: 50px;
+    height: 45px;
+}
+
+.play-song-info{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.con-left {
+    display: flex;
+    height: 100%;
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-right {
+    display: flex;
+    left: 90%;
+    width: min-content;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+}
+.font-mid
+{
+    font-size:15px;
+}
+.con-right i{
+    background: transparent;
+}
+
+/*****************************************Player Controls ******************************** */
+
+.player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.player-contorls{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.player-contorls div, i{
+    background: transparent;
+}
+
+.time {
+    margin: 0px 10px;
+    margin-top: -30px;
+}
+
+.slide-ctr {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.slider {
+    --appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************* Extras **********************/
+
+.extras{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.extras div, i{
+    background: transparent;
+}
